@@ -12,19 +12,26 @@ class Home extends Component {
       <>
         <Header />
         <main>
-          <section className='info-container'>
+          
+          
+          <section className='info-container col-11'>
             <div className='introduction-container'>
               <span>Hello World! Meu nome é</span>
               <h1 className='name'>Eduardo Muchak</h1>
               <p>e sou aspirante a Front-End Developer.</p>
               <span>Atualmente sou estudante na <a target="_blank" href='https://www.betrybe.com/' rel="noreferrer" className='external-links'><strong>Trybe</strong></a></span>
             </div>
-            <aside>
-              <img className='developer-image'src={ Working } alt='Working' />
+            <aside className='rounded float-end'>
+              <figure class="figure">
+                <img className='developer-image figure-img img-fluid rounded'src={ Working } alt='Working' />
+              </figure>
             </aside>
           </section>
-          <section>
-            <div>
+
+
+
+          <section className='col-11'>
+            <div className='section-container'>
               <h2 className='title'>Algumas das tecnologias que já tive contato</h2>
               <div className='technologies-container'>
                 <div>

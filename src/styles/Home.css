@@ -9,6 +9,7 @@ h2 {
 
 .info-container {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
   width: 100%;
@@ -19,6 +20,7 @@ h2 {
 .introduction-container {
   display: flex;
   flex-direction: column;
+  margin: 50px 0px;
 }
 
 .name {
@@ -29,14 +31,20 @@ h2 {
 }
 
 .developer-image {
-  height: 30rem;
-  margin-left: 2rem;
+  max-height: 33rem;
+}
+
+.section-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .technologies-container {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .technologie {
@@ -58,6 +66,8 @@ h2 {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   border-color: rgb(10, 101, 255);
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .icons-container {
