@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import NotFoundImage from '../images/not-found(3).png';
+import Contato from '../images/contato(2).png';
 import '../styles/NotFound.css';
 
 class ThankYou extends Component {
@@ -8,9 +8,18 @@ class ThankYou extends Component {
     return (
       <main className='not-found-container'>
         <Link to="/" className='not-found-link'>
-          <img src={ NotFoundImage } alt="404 Message" className='not-found-image'/>
+          <div className='mt-5'>
+            <figure class="figure">
+              <img 
+                className='developer-image figure-img img-fluid'
+                src={ Contato }
+                alt="Mulher olhando para computador"
+              />
+            </figure>
+          </div>
         </Link>
-        <h1>Erro! A página que você buscou não foi encontrada.</h1>
+        <h1>Obrigado por entrar em contato!</h1>
+        <h3>Assim que possível entro em contato contigo através do email cadastrado.</h3>
       </main>
     );
   }
