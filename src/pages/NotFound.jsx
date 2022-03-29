@@ -8,9 +8,17 @@ class NotFound extends Component {
     return (
       <main className='not-found-container'>
         <Link to="/" className='not-found-link'>
-          <img src={ NotFoundImage } alt="404 Message" className='not-found-image'/>
+          <div className='rounded float-end col-md-6 mt-5'>
+            <figure class="figure">
+              <img 
+                className='developer-image figure-img img-fluid rounded'
+                src={ NotFoundImage }
+                alt="404 Message"
+              />
+            </figure>
+          </div>
         </Link>
-        <h1>Erro! A página que você buscou não foi encontrada.</h1>
+        <h1>Opa! Parece que a página que você buscou não foi encontrada.</h1>
       </main>
     );
   }
