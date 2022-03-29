@@ -1,0 +1,16 @@
+.not-found-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 97vh;
+}
+
+.not-found-link {
+  display: contents;
+}
+
+.not-found-image {
+  width: 40%;
+  margin: 40px;
+}
