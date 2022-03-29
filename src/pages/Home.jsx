@@ -17,8 +17,6 @@ class Home extends Component {
       <>
         <Header />
         <main className='col-11'>
-          
-          
           <section className='info-container col-11'>
             <div className='introduction-container'>
               <span>Hello World! Meu nome é</span>
@@ -32,14 +30,11 @@ class Home extends Component {
               </figure>
             </aside>
           </section>
-
-
-
           <section className='col-12'>
             <div className='section-container container'>
               <h2 className='title'>Algumas das tecnologias que já tive contato</h2>
               <div className='technologies-container row align-items-start'>
-                <div className='col'>
+                <div className='col-md-4'>
                   <div className='technologie'>
                     <span className='icon'><AiOutlineApi/></span>
                     <span>Consumo de API's</span>
@@ -53,7 +48,7 @@ class Home extends Component {
                     <span>Git</span>
                   </div>
                 </div>
-                <div className='col'>
+                <div className='col-md-4'>
                   <div className='technologie'>
                     <span className='icon'><SiHtml5/></span>
                     <span>Html</span>
@@ -67,7 +62,7 @@ class Home extends Component {
                     <span>Jest</span>
                   </div>
                 </div>
-                <div className='col'>
+                <div className='col-md-4'>
                   <div className='technologie'>
                     <span className='icon'><FaReact/></span>
                     <span>React</span>
@@ -83,9 +78,7 @@ class Home extends Component {
                 </div>
               </div>
             </div>
-
             <br/>
-
             <div className='col-12 container'>
               <h2 className='title'>Sobre mim</h2>
               <p>Sou apaixonado por aprendizado. Acredito que podemos melhorar nossas vidas através do conhecimento e da sabedoria. Por toda a minha carreira profissional, sempre acabei sendo uma pessoa curiosa com todo o processo de funcionamento das coisas e com isso, acabei me descobrindo na tecnologia.</p>
@@ -105,15 +98,12 @@ class Home extends Component {
               </div>
             </div>
           </section>
-
           <br/>
-
           <section className='container m-auto'>
             <div className='row'>
               <div className='col-md-12'>
                 <h2 className='title'>Conheça alguns dos meus projetos</h2>
               </div>
-
               <div className='col-md-4 mb-4'>
                 <div className='card'>
                   <img src={ Working2 } class="card-img-top" alt="..."/>
@@ -126,7 +116,6 @@ class Home extends Component {
                   </div>
                 </div>
               </div>
-
               <div className='col-md-4 mb-4'>
                 <div className='card'>
                   <img src={ Contato1 } class="card-img-top" alt="..."/>
@@ -139,7 +128,6 @@ class Home extends Component {
                   </div>
                 </div>
               </div>
-
               <div className='col-md-4 mb-4'>
                 <div className='card'>
                   <img src={ Contato2 } class="card-img-top" alt="..."/>
@@ -152,7 +140,6 @@ class Home extends Component {
                   </div>
                 </div>
               </div>
-
               <div className='col-md-4 mb-4'>
                 <div className='card'>
                   <img src={ Contato3 } class="card-img-top" alt="..."/>
@@ -165,7 +152,6 @@ class Home extends Component {
                   </div>
                 </div>
               </div>
-
               <div className='col-md-4 mb-4'>
                 <div className='card'>
                   <img src={ Working } class="card-img-top" alt="..."/>
@@ -178,7 +164,6 @@ class Home extends Component {
                   </div>
                 </div>
               </div>
-
               <div className='col-md-4 mb-4'>
                 <div className='card'>
                   <img src={ NotFound } class="card-img-top" alt="..."/>
