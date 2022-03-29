@@ -3,7 +3,12 @@ import { AiOutlineApi } from 'react-icons/ai';
 import { FaGitAlt, FaGithubSquare, FaLinkedin, FaReact } from 'react-icons/fa';
 import { SiCss3, SiHtml5, SiJavascript, SiJest, SiRedux, SiTestinglibrary } from 'react-icons/si';
 import Header from '../components/Header';
+import Contato1 from '../images/contato(1).png';
+import Contato2 from '../images/contato(2).png';
+import Contato3 from '../images/contato(3).png';
+import NotFound from '../images/not-found.png';
 import Working from '../images/working(2).png';
+import Working2 from '../images/working.png';
 import '../styles/Home.css';
 
 class Home extends Component {
@@ -11,7 +16,7 @@ class Home extends Component {
     return (
       <>
         <Header />
-        <main>
+        <main className='col-11'>
           
           
           <section className='info-container col-11'>
@@ -30,11 +35,11 @@ class Home extends Component {
 
 
 
-          <section className='col-11'>
-            <div className='section-container'>
+          <section className='col-12'>
+            <div className='section-container container'>
               <h2 className='title'>Algumas das tecnologias que já tive contato</h2>
-              <div className='technologies-container'>
-                <div>
+              <div className='technologies-container row align-items-start'>
+                <div className='col'>
                   <div className='technologie'>
                     <span className='icon'><AiOutlineApi/></span>
                     <span>Consumo de API's</span>
@@ -48,7 +53,7 @@ class Home extends Component {
                     <span>Git</span>
                   </div>
                 </div>
-                <div>
+                <div className='col'>
                   <div className='technologie'>
                     <span className='icon'><SiHtml5/></span>
                     <span>Html</span>
@@ -62,7 +67,7 @@ class Home extends Component {
                     <span>Jest</span>
                   </div>
                 </div>
-                <div>
+                <div className='col'>
                   <div className='technologie'>
                     <span className='icon'><FaReact/></span>
                     <span>React</span>
@@ -78,12 +83,14 @@ class Home extends Component {
                 </div>
               </div>
             </div>
-            <br/><br/>
-            <div>
+
+            <br/>
+
+            <div className='col-12 container'>
               <h2 className='title'>Sobre mim</h2>
               <p>Sou apaixonado por aprendizado. Acredito que podemos melhorar nossas vidas através do conhecimento e da sabedoria. Por toda a minha carreira profissional, sempre acabei sendo uma pessoa curiosa com todo o processo de funcionamento das coisas e com isso, acabei me descobrindo na tecnologia.</p>
             </div>
-            <div className='icons-container'>
+            <div className='icons-container container'>
               <div className='icons-sub-container'>
                 <a target="_blank" href='https://github.com/eduardomuchak' rel="noreferrer" className='external-links'>
                   <span className='icon'><FaGithubSquare/></span>
@@ -98,27 +105,91 @@ class Home extends Component {
               </div>
             </div>
           </section>
-          <br/><br/>
-          <section className='projects-container'>
-            <h2 className='title'>Conheça alguns dos meus projetos</h2>
-            <div className='project-cards'>
-              <div className='project-card'>
-                <span>Projeto 1</span>
+
+          <br/>
+
+          <section className='container m-auto'>
+            <div className='row'>
+              <div className='col-md-12'>
+                <h2 className='title'>Conheça alguns dos meus projetos</h2>
               </div>
-              <div className='project-card'>
-                <span>Projeto 2</span>
+
+              <div className='col-md-4 mb-4'>
+                <div className='card'>
+                  <img src={ Working2 } class="card-img-top" alt="..."/>
+                  <div className='card-body'>
+                    <h5 className='title-card'>Projeto 1</h5>
+                    <div className='mb-3'></div>
+                    <p className='text-card'>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                  </div>
+                </div>
               </div>
-              <div className='project-card'>
-                <span>Projeto 3</span>
+
+              <div className='col-md-4 mb-4'>
+                <div className='card'>
+                  <img src={ Contato1 } class="card-img-top" alt="..."/>
+                  <div className='card-body'>
+                    <h5 className='title-card'>Projeto 2</h5>
+                    <div className='mb-3 underline'></div>
+                    <p className='text-card'>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                  </div>
+                </div>
               </div>
-              <div className='project-card'>
-                <span>Projeto 4</span>
+
+              <div className='col-md-4 mb-4'>
+                <div className='card'>
+                  <img src={ Contato2 } class="card-img-top" alt="..."/>
+                  <div className='card-body'>
+                    <h5 className='title-card'>Projeto 3</h5>
+                    <div className='mb-3'></div>
+                    <p className='text-card'>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                  </div>
+                </div>
               </div>
-              <div className='project-card'>
-                <span>Projeto 5</span>
+
+              <div className='col-md-4 mb-4'>
+                <div className='card'>
+                  <img src={ Contato3 } class="card-img-top" alt="..."/>
+                  <div className='card-body'>
+                    <h5 className='title-card'>Projeto 4</h5>
+                    <div className='mb-3'></div>
+                    <p className='text-card'>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                  </div>
+                </div>
               </div>
-              <div className='project-card'>
-                <span>Projeto 6</span>
+
+              <div className='col-md-4 mb-4'>
+                <div className='card'>
+                  <img src={ Working } class="card-img-top" alt="..."/>
+                  <div className='card-body'>
+                    <h5 className='title-card'>Projeto 5</h5>
+                    <div className='mb-3'></div>
+                    <p className='text-card'>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className='col-md-4 mb-4'>
+                <div className='card'>
+                  <img src={ NotFound } class="card-img-top" alt="..."/>
+                  <div className='card-body'>
+                    <h5 className='title-card'>Projeto 6</h5>
+                    <div className='mb-3'></div>
+                    <p className='text-card'>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </section>

@@ -61,13 +61,8 @@ h2 {
 .title {
   font-weight: 700;
   color: white;
-  width: max-content;
-  border-bottom: #EBEEFF solid 4px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  border-color: rgb(10, 101, 255);
-  display: flex;
-  flex-wrap: wrap;
+  text-decoration: underline;
+  text-decoration-color: rgb(10, 101, 255);
 }
 
 .icons-container {
@@ -111,4 +106,13 @@ h2 {
   color: #050a24;
   margin: 0px 30px;
   margin-bottom: 30px;
+}
+
+.text-card{
+  color: #050a24;
+}
+
+.title-card {
+  color: #050a24;
+  font-weight: 700;
 }
