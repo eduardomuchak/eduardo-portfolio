@@ -28,6 +28,7 @@ class Contact extends Component {
                 className='form-group'
               >
                 <input type="hidden" name="_next" value="http://localhost:3000/thankyou"/>
+                <input type="hidden" name="_captcha" value="false"/>
                 <div className='input-container'>
                   <input 
                     type="text" 
