@@ -8,10 +8,10 @@ class NotFound extends Component {
     return (
       <main className='not-found-container'>
         <Link to="/" className='not-found-link'>
-          <div className='rounded float-end col-md-6 mt-5'>
+          <div className='mt-5'>
             <figure class="figure">
               <img 
-                className='developer-image figure-img img-fluid rounded'
+                className='developer-image figure-img img-fluid'
                 src={ NotFoundImage }
                 alt="404 Message"
               />
