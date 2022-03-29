@@ -2,11 +2,10 @@ import React, { Component } from 'react';
 import { AiOutlineApi } from 'react-icons/ai';
 import { FaGitAlt, FaGithubSquare, FaLinkedin, FaReact } from 'react-icons/fa';
 import { SiCss3, SiHtml5, SiJavascript, SiJest, SiRedux, SiTestinglibrary } from 'react-icons/si';
+import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Contato1 from '../images/contato(1).png';
 import Contato2 from '../images/contato(2).png';
-import Contato3 from '../images/contato(3).png';
-import NotFound from '../images/not-found.png';
 import Working from '../images/working(2).png';
 import Working2 from '../images/working.png';
 import '../styles/Home.css';
@@ -140,45 +139,10 @@ class Home extends Component {
                   </div>
                 </div>
               </div>
-              <div className='col-md-4 mb-4'>
-                <div className='card'>
-                  <img src={ Contato3 } class="card-img-top" alt="..."/>
-                  <div className='card-body'>
-                    <h5 className='title-card'>Projeto 4</h5>
-                    <div className='mb-3'></div>
-                    <p className='text-card'>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className='col-md-4 mb-4'>
-                <div className='card'>
-                  <img src={ Working } class="card-img-top" alt="..."/>
-                  <div className='card-body'>
-                    <h5 className='title-card'>Projeto 5</h5>
-                    <div className='mb-3'></div>
-                    <p className='text-card'>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className='col-md-4 mb-4'>
-                <div className='card'>
-                  <img src={ NotFound } class="card-img-top" alt="..."/>
-                  <div className='card-body'>
-                    <h5 className='title-card'>Projeto 6</h5>
-                    <div className='mb-3'></div>
-                    <p className='text-card'>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </p>
-                  </div>
-                </div>
-              </div>
             </div>
           </section>
         </main>
+        <Footer />
       </>
     );
   }
