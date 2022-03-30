@@ -6,7 +6,7 @@ class Footer extends Component {
     return (
       <footer>
         <span className='col'>
-          Projeto Desenvolvido por Eduardo Muchak com React e Bootstrap.
+          Desenvolvido com ReactJS, Bootstrap e algumas xícaras de café.
         </span>
       </footer>
     );
