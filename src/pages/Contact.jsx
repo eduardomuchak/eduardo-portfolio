@@ -27,7 +27,7 @@ class Contact extends Component {
                 action="https://formsubmit.co/eduardomuchak@gmail.com" 
                 className='form-group'
               >
-                <input type="hidden" name="_next" value="http://localhost:3000/thankyou"/>
+                <input type="hidden" name="_next" value="https://eduardomuchak.vercel.app/thankyou"/>
                 <input type="hidden" name="_captcha" value="false"/>
                 <div className='input-container'>
                   <input 
