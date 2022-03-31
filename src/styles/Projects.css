@@ -1,0 +1,39 @@
+.text-card {
+  font-size: 18px;
+}
+
+.title-card {
+  display: flex;
+  font-weight: 700;
+  color: #050a24;
+  text-decoration: underline;
+  text-decoration-color: rgb(10, 101, 255);
+  margin: 0px;
+  align-items: center;
+}
+
+.project-icon {
+  color:#050a24;
+  font-size: 24px;
+  margin: 0px 10px;
+}
+
+.project-icon:hover {
+  color:rgb(10, 101, 255);
+  font-size: 23px;
+}
+
+.project-title-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-icons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  height: 100%;
+}

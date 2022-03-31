@@ -4,8 +4,8 @@ import '../styles/Footer.css';
 class Footer extends Component {
   render() { 
     return (
-      <footer>
-        <span className='col'>
+      <footer className='footer-container'>
+        <span className='card-body'>
           Desenvolvido com ReactJS, Bootstrap e algumas xícaras de café.
         </span>
       </footer>
