@@ -37,3 +37,9 @@
 .card {
   height: 100%;
 }
+
+.text-card-list {
+  color:#050a24;
+  font-size: 18px;
+  margin: 0px;
+}
