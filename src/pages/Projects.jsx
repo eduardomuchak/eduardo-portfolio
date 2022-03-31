@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import { FaGithubSquare } from 'react-icons/fa';
 import { HiExternalLink } from 'react-icons/hi';
 import Header from '../components/Header';
-import Contato2 from '../images/contato(2).png';
 import Contato3 from '../images/contato(3).png';
 import NotFound from '../images/not-found.png';
 import PixelsArt from '../images/pixels-art.gif';
 import ToDoList from '../images/to-do-list.gif';
+import TrybeWarts from '../images/trybewarts.gif';
 import Working from '../images/working(2).png';
 import '../styles/Projects.css';
 
@@ -81,19 +81,40 @@ class Projects extends Component {
                       <li>CSS</li>
                       <li>HTML</li>
                       <li>JavaScript Puro</li>
+                      <li>Local Storage</li>
                     </ul>
                   </div>
                 </div>
               </div>
               <div className='col-md-4 mb-4'>
                 <div className='card'>
-                  <img src={ Contato2 } class="card-img-top" alt="..."/>
+                  <img src={ TrybeWarts } class="card-img-top" alt="..."/>
                   <div className='card-body'>
-                    <h5 className='title-card'>Projeto 3</h5>
-                    <div className='mb-3'></div>
-                    <p className='text-card'>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </p>
+                    <div className='project-title-container mb-1'>
+                      <h5 className='title-card'>TrybeWarts</h5>
+                      <div className='card-icons-container'>
+                        <a target="_blank" href="https://github.com/eduardomuchak/06-trybewarts" rel="noreferrer">
+                          <span className='project-icon'><FaGithubSquare/></span>
+                        </a>
+                        <a target="_blank" href="https://trybewarts-eduardomuchak.vercel.app/" rel="noreferrer">
+                          <span className='project-icon'><HiExternalLink/></span>
+                        </a>
+                      </div>
+                    </div>
+                    <span className='text-card'>
+                      Sexto projeto feito no módulo de Fundamentos do Desenvolvimento Web da Trybe e o primeiro projeto em Dupla.
+                    </span>
+                    <br />
+                    <span className='text-card'>
+                      O projeto consistia em criar um formulário de cadastro de uma pessoa estudante da escola TrybeWarts. 
+                    </span>
+                    <br />
+                    <span className='title-card'>Tecnologias utilizadas:</span>
+                    <ul className='text-card-list'>
+                      <li>CSS</li>
+                      <li>HTML</li>
+                      <li>JavaScript Puro</li>
+                    </ul>
                   </div>
                 </div>
               </div>
