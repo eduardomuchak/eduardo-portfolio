@@ -2,16 +2,31 @@ import React, { Component } from 'react';
 import { AiOutlineApi } from 'react-icons/ai';
 import { FaGitAlt, FaGithubSquare, FaLinkedin, FaReact } from 'react-icons/fa';
 import { SiCss3, SiHtml5, SiJavascript, SiJest, SiRedux, SiTestinglibrary } from 'react-icons/si';
+import Card from '../components/Card';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Contato1 from '../images/contato(1).png';
 import Contato2 from '../images/contato(2).png';
 import Working from '../images/working(2).png';
-import Working2 from '../images/working.png';
 import '../styles/Home.css';
 
 class Home extends Component {
+  constructor(){
+    super()
+    this.state = {
+      projects: [{
+        project: 'trybeTunes',
+        title: 'Trybe Tunes',
+        gitHubURL: 'https://github.com/eduardomuchak/12-trybe-tunes',
+        vercelURL: 'https://trybetunes-eduardomuchak.vercel.app/',
+        description: 'O projeto consistia em aplicar os conceitos de Estado do componente criando uma aplicação que consumisse informações da API do iTunes para recriarmos uma aplicação de busca e reprodução de músicas.',
+        technologies: ['API iTunes', 'CSS', 'JavaScript', 'ReactJS', 'React Router Dom'],
+        image: '../images/trybetunes.gif',
+      }]
+    }
+  }
   render() { 
+    const { projects } = this.state;
     return (
       <>
         <Header />
@@ -103,18 +118,7 @@ class Home extends Component {
               <div className='col-md-12'>
                 <h2 className='title'>Conheça alguns dos meus projetos</h2>
               </div>
-              <div className='col-md-4 mb-4'>
-                <div className='card'>
-                  <img src={ Working2 } class="card-img-top" alt="..."/>
-                  <div className='card-body'>
-                    <h5 className='title-card'>Projeto 1</h5>
-                    <div className='mb-3'></div>
-                    <p className='text-card'>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </p>
-                  </div>
-                </div>
-              </div>
+              <Card projects={projects}/>
               <div className='col-md-4 mb-4'>
                 <div className='card'>
                   <img src={ Contato1 } class="card-img-top" alt="..."/>

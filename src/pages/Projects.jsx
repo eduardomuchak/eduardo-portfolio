@@ -2,17 +2,13 @@ import React, { Component } from 'react';
 import { FaGithubSquare } from 'react-icons/fa';
 import { HiExternalLink } from 'react-icons/hi';
 import Header from '../components/Header';
-import Contato3 from '../images/contato(3).png';
-import NotFound from '../images/not-found.png';
 import PixelsArt from '../images/pixels-art.gif';
-import ToDoList from '../images/to-do-list.gif';
-import TrybeWarts from '../images/trybewarts.gif';
 import ShoppingCart from '../images/shopping-cart.gif';
 import SolarSystem from '../images/solar-system.gif';
+import ToDoList from '../images/to-do-list.gif';
 import TrybeTunes from '../images/trybetunes.gif';
-import Working from '../images/working(2).png';
+import TrybeWarts from '../images/trybewarts.gif';
 import '../styles/Projects.css';
-
 
 class Projects extends Component {
   render() { 
