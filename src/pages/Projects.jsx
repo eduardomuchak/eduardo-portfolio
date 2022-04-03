@@ -7,6 +7,9 @@ import NotFound from '../images/not-found.png';
 import PixelsArt from '../images/pixels-art.gif';
 import ToDoList from '../images/to-do-list.gif';
 import TrybeWarts from '../images/trybewarts.gif';
+import ShoppingCart from '../images/shopping-cart.gif';
+import SolarSystem from '../images/solar-system.gif';
+import TrybeTunes from '../images/trybetunes.gif';
 import Working from '../images/working(2).png';
 import '../styles/Projects.css';
 
@@ -91,7 +94,7 @@ class Projects extends Component {
                   <img src={ TrybeWarts } class="card-img-top" alt="..."/>
                   <div className='card-body'>
                     <div className='project-title-container mb-1'>
-                      <h5 className='title-card'>TrybeWarts</h5>
+                      <h5 className='title-card'>Trybe Warts</h5>
                       <div className='card-icons-container'>
                         <a target="_blank" href="https://github.com/eduardomuchak/06-trybewarts" rel="noreferrer">
                           <span className='project-icon'><FaGithubSquare/></span>
@@ -120,37 +123,96 @@ class Projects extends Component {
               </div>
               <div className='col-md-4 mb-4'>
                 <div className='card'>
-                  <img src={ Contato3 } class="card-img-top" alt="..."/>
+                  <img src={ ShoppingCart } class="card-img-top" alt="..."/>
                   <div className='card-body'>
-                    <h5 className='title-card'>Projeto 4</h5>
-                    <div className='mb-3'></div>
-                    <p className='text-card'>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </p>
+                    <div className='project-title-container mb-1'>
+                      <h5 className='title-card'>Shopping Cart</h5>
+                      <div className='card-icons-container'>
+                        <a target="_blank" href="https://github.com/eduardomuchak/09-shopping-cart" rel="noreferrer">
+                          <span className='project-icon'><FaGithubSquare/></span>
+                        </a>
+                        <a target="_blank" href="https://shoppingcart-eduardomuchak.vercel.app/" rel="noreferrer">
+                          <span className='project-icon'><HiExternalLink/></span>
+                        </a>
+                      </div>
+                    </div>
+                    <span className='text-card'>
+                      Último projeto feito no módulo de Fundamentos do Desenvolvimento Web da Trybe.
+                    </span>
+                    <br />
+                    <span className='text-card'>
+                      O projeto consistia em consumir a API do Mercado Livre e criar um sistema de adicionar e remover itens de um carrinho de compras.
+                    </span>
+                    <br />
+                    <span className='title-card'>Tecnologias utilizadas:</span>
+                    <ul className='text-card-list'>
+                      <li>API Mercado Livre</li>
+                      <li>CSS</li>
+                      <li>HTML</li>
+                      <li>JavaScript Puro</li>
+                    </ul>
                   </div>
                 </div>
               </div>
               <div className='col-md-4 mb-4'>
                 <div className='card'>
-                  <img src={ Working } class="card-img-top" alt="..."/>
+                  <img src={ SolarSystem } class="card-img-top" alt="..."/>
                   <div className='card-body'>
-                    <h5 className='title-card'>Projeto 5</h5>
-                    <div className='mb-3'></div>
-                    <p className='text-card'>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </p>
+                    <div className='project-title-container mb-1'>
+                      <h5 className='title-card'>Solar System</h5>
+                      <div className='card-icons-container'>
+                        <a target="_blank" href="https://github.com/eduardomuchak/10-solar-system" rel="noreferrer">
+                          <span className='project-icon'><FaGithubSquare/></span>
+                        </a>
+                        <a target="_blank" href="https://solarsystem-eduardomuchak.vercel.app/" rel="noreferrer">
+                          <span className='project-icon'><HiExternalLink/></span>
+                        </a>
+                      </div>
+                    </div>
+                    <span className='text-card'>
+                      Primeiro projeto feito no módulo de Front End da Trybe.
+                    </span>
+                    <br />
+                    <span className='text-card'>
+                      O projeto consistia em praticar e aplicar o conceito de Componentes de Classe do React criando uma página com informações das missões espaciais e os nomes dos planetas do sistema solar.
+                    </span>
+                    <br />
+                    <span className='title-card'>Tecnologias utilizadas:</span>
+                    <ul className='text-card-list'>
+                      <li>CSS</li>
+                      <li>JavaScript</li>
+                      <li>ReactJS</li>
+                    </ul>
                   </div>
                 </div>
               </div>
               <div className='col-md-4 mb-4'>
                 <div className='card'>
-                  <img src={ NotFound } class="card-img-top" alt="..."/>
+                  <img src={ TrybeTunes } class="card-img-top" alt="..."/>
                   <div className='card-body'>
-                    <h5 className='title-card'>Projeto 6</h5>
-                    <div className='mb-3'></div>
-                    <p className='text-card'>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </p>
+                    <div className='project-title-container mb-1'>
+                      <h5 className='title-card'>Trybe Tunes</h5>
+                      <div className='card-icons-container'>
+                        <a target="_blank" href="https://github.com/eduardomuchak/12-trybe-tunes" rel="noreferrer">
+                          <span className='project-icon'><FaGithubSquare/></span>
+                        </a>
+                        <a target="_blank" href="https://trybetunes-eduardomuchak.vercel.app/" rel="noreferrer">
+                          <span className='project-icon'><HiExternalLink/></span>
+                        </a>
+                      </div>
+                    </div>
+                    <span className='text-card'>
+                      O projeto consistia em aplicar os conceitos de Estado do componente criando uma aplicação que consumisse informações da API do iTunes para recriarmos uma aplicação de busca e reprodução de músicas.
+                    </span>
+                    <br />
+                    <span className='title-card'>Tecnologias utilizadas:</span>
+                    <ul className='text-card-list'>
+                      <li>API do iTunes</li>
+                      <li>CSS</li>
+                      <li>JavaScript</li>
+                      <li>ReactJS</li>
+                      <li>React Router Dom</li>
+                    </ul>
                   </div>
                 </div>
               </div>
