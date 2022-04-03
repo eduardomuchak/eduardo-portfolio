@@ -5,8 +5,9 @@ import { SiCss3, SiHtml5, SiJavascript, SiJest, SiRedux, SiTestinglibrary } from
 import Card from '../components/Card';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
-import Contato1 from '../images/contato(1).png';
-import Contato2 from '../images/contato(2).png';
+import PixelsArt from '../images/pixels-art.gif';
+import SolarSystem from '../images/solar-system.gif';
+import TrybeTunes from '../images/trybetunes.gif';
 import Working from '../images/working(2).png';
 import '../styles/Home.css';
 
@@ -14,15 +15,32 @@ class Home extends Component {
   constructor(){
     super()
     this.state = {
-      projects: [{
-        project: 'trybeTunes',
+      projects: [
+        {
         title: 'Trybe Tunes',
         gitHubURL: 'https://github.com/eduardomuchak/12-trybe-tunes',
         vercelURL: 'https://trybetunes-eduardomuchak.vercel.app/',
         description: 'O projeto consistia em aplicar os conceitos de Estado do componente criando uma aplicação que consumisse informações da API do iTunes para recriarmos uma aplicação de busca e reprodução de músicas.',
         technologies: ['API iTunes', 'CSS', 'JavaScript', 'ReactJS', 'React Router Dom'],
-        image: '../images/trybetunes.gif',
-      }]
+        image: `${TrybeTunes}`,
+      },
+      {
+        title: 'Solar System',
+        gitHubURL: 'https://github.com/eduardomuchak/10-solar-system',
+        vercelURL: 'https://solarsystem-eduardomuchak.vercel.app/',
+        description: 'Primeiro projeto feito no módulo de Front End da Trybe. O projeto consistia em praticar e aplicar o conceito de Componentes de Classe do React criando página com informações das missões espaciais como ano e o país responsável pela missão,além dos nomes dos planetas do sistema solar.',
+        technologies: ['CSS', 'JavaScript', 'ReactJS'],
+        image: `${SolarSystem}`,
+      },
+      {
+        title: 'Pixels Art',
+        gitHubURL: 'https://github.com/eduardomuchak/03-pixels-art',
+        vercelURL: 'https://pixelart-eduardomuchak.vercel.app/',
+        description: 'Terceiro projeto feito no módulo de Fundamentos do Desenvolvimento Web da Trybe. O projeto consistia em criar um board de pixels para a pessoa usuária colorir conforme as cores disponibilizadas de forma aleatória. Também é possível escolher qual será o tamanho do board.',
+        technologies: ['CSS', 'HTML', 'JavaScript Puro'],
+        image: `${PixelsArt}`,
+      }
+    ]
     }
   }
   render() { 
@@ -118,31 +136,9 @@ class Home extends Component {
               <div className='col-md-12'>
                 <h2 className='title'>Conheça alguns dos meus projetos</h2>
               </div>
+
               <Card projects={projects}/>
-              <div className='col-md-4 mb-4'>
-                <div className='card'>
-                  <img src={ Contato1 } class="card-img-top" alt="..."/>
-                  <div className='card-body'>
-                    <h5 className='title-card'>Projeto 2</h5>
-                    <div className='mb-3 underline'></div>
-                    <p className='text-card'>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className='col-md-4 mb-4'>
-                <div className='card'>
-                  <img src={ Contato2 } class="card-img-top" alt="..."/>
-                  <div className='card-body'>
-                    <h5 className='title-card'>Projeto 3</h5>
-                    <div className='mb-3'></div>
-                    <p className='text-card'>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </p>
-                  </div>
-                </div>
-              </div>
+              
             </div>
           </section>
         </main>

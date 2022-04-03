@@ -6,7 +6,6 @@ import '../styles/Projects.css';
 class Card extends Component {
   render() { 
     const {projects} = this.props;
-    console.log(projects[0]);
     return (
       projects.map((project) => (
         <div className='col-md-4 mb-4'>
