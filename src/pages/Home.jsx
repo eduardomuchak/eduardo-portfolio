@@ -5,9 +5,9 @@ import { SiCss3, SiHtml5, SiJavascript, SiJest, SiRedux, SiTestinglibrary } from
 import Card from '../components/Card';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
-import PixelsArt from '../images/pixels-art.gif';
-import SolarSystem from '../images/solar-system.gif';
+import Trivia from '../images/trivia.gif';
 import TrybeTunes from '../images/trybetunes.gif';
+import TrybeWallet from '../images/trybewallet.gif';
 import Working from '../images/working(2).png';
 import '../styles/Home.css';
 
@@ -17,28 +17,28 @@ class Home extends Component {
     this.state = {
       projects: [
         {
+        title: 'Trivia Game',
+        gitHubURL: 'https://github.com/eduardomuchak/17-trivia-game',
+        vercelURL: 'https://trivia-eduardomuchak.vercel.app/',
+        description: 'Projeto desenvolvido em grupo durante o módulo de Front-End do curso da Trybe. A concepção do projeto foi criar um jogo de perguntas e respostas que somasse os pontos da pessoa usuária',
+        technologies: ['API Trivia', 'Bootstrap', 'CSS', 'JavaScript', 'React Router Dom', 'ReactJS', 'Redux'],
+        image: `${Trivia}`,
+      },
+      {
+        title: 'Trybe Wallet',
+        gitHubURL: 'https://github.com/eduardomuchak/16-trybe-wallet',
+        vercelURL: 'https://trybewallet-eduardomuchak.vercel.app/',
+        description: 'Primeiro projeto do módulo de Front-End da Trybe em que usamos Redux. O projeto consistia em criar uma aplicação que ajudasse a pessoa usuária a gerenciar suas despesas em diversas moedas',
+        technologies: ['API Cotação de Moedas', 'Bootstrap', 'CSS', 'JavaScript', 'React Router Dom', 'ReactJS', 'Redux'],
+        image: `${TrybeWallet}`,
+      },
+      {
         title: 'Trybe Tunes',
         gitHubURL: 'https://github.com/eduardomuchak/12-trybe-tunes',
         vercelURL: 'https://trybetunes-eduardomuchak.vercel.app/',
         description: 'O projeto consistia em aplicar os conceitos de Estado do componente criando uma aplicação que consumisse informações da API do iTunes para recriarmos uma aplicação de busca e reprodução de músicas.',
         technologies: ['API iTunes', 'CSS', 'JavaScript', 'ReactJS', 'React Router Dom'],
         image: `${TrybeTunes}`,
-      },
-      {
-        title: 'Solar System',
-        gitHubURL: 'https://github.com/eduardomuchak/10-solar-system',
-        vercelURL: 'https://solarsystem-eduardomuchak.vercel.app/',
-        description: 'Primeiro projeto feito no módulo de Front End da Trybe. O projeto consistia em praticar e aplicar o conceito de Componentes de Classe do React criando página com informações das missões espaciais como ano e o país responsável pela missão,além dos nomes dos planetas do sistema solar.',
-        technologies: ['CSS', 'JavaScript', 'ReactJS'],
-        image: `${SolarSystem}`,
-      },
-      {
-        title: 'Pixels Art',
-        gitHubURL: 'https://github.com/eduardomuchak/03-pixels-art',
-        vercelURL: 'https://pixelart-eduardomuchak.vercel.app/',
-        description: 'Terceiro projeto feito no módulo de Fundamentos do Desenvolvimento Web da Trybe. O projeto consistia em criar um board de pixels para a pessoa usuária colorir conforme as cores disponibilizadas de forma aleatória. Também é possível escolher qual será o tamanho do board.',
-        technologies: ['CSS', 'HTML', 'JavaScript Puro'],
-        image: `${PixelsArt}`,
       }
     ]
     }
