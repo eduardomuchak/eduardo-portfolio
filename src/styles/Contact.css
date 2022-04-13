@@ -8,7 +8,7 @@
 
 .main-container {
   display: flex;
-  height: 94%;
+  min-height: 91.9vh;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
