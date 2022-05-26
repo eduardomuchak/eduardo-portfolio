@@ -7,7 +7,7 @@ function Card({project}) {
   return (
     <div className='col-md-4 mb-4'>
     <div className='card'>
-      <img src={ `${project.image}` } className="card-img-top" alt="..."/>
+      <img src={ `${project.image}` } className="card-img-top" alt="gif do projeto em funcionamento"/>
       <div className='card-body'>
         <div className='project-title-container mb-1'>
           <h5 className='title-card'>{project.title}</h5>
