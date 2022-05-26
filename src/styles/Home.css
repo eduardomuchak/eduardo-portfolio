@@ -47,14 +47,14 @@ h2 {
   justify-content: space-evenly;
 }
 
-.technologie {
+.technology {
   display: flex;
   flex-direction: row;
   align-items: center;
   margin: 15px 0px;
 }
 
-.technologie:hover {
+.technology:hover {
   color: rgb(104, 155, 243);
 }
 
