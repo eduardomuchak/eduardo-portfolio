@@ -51,3 +51,9 @@ header {
   text-align: center;
   text-decoration: none;
 }
+
+.skip-to-content-link {
+  left: 50%;
+  position: absolute;
+  transform: translateY(-100%);
+}

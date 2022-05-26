@@ -9,6 +9,7 @@ class Header extends Component {
       <header>
         <nav className='header-container'>
           <div className="col-1">
+            <a class="skip-to-content-link" href="#main"> </a>
             <Link to="/" className="logo"><FaCode/></Link>
           </div>
           <div className="col-11">
@@ -26,5 +27,5 @@ class Header extends Component {
     );
   }
 }
- 
+
 export default Header;

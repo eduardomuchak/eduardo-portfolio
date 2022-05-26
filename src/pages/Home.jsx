@@ -13,6 +13,7 @@ function Home() {
     <>
       <Header />
       <main className='col-11'>
+        <a name="main-content" href="#main"> </a>
         <section className='info-container col-11'>
           <div className='introduction-container'>
             <span>Hello World! Meu nome é</span>
