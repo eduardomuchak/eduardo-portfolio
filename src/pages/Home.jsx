@@ -102,7 +102,7 @@ function Home() {
               <h2 className='title'>Conheça alguns dos meus projetos</h2>
             </div>
             {
-              Projects.map((project, index)=> <Card project={project} key={index}/>)
+              Projects.slice(0, 3).map((project, index)=> <Card project={project} key={index}/>)
             }
           </div>
         </section>
